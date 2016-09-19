@@ -10,8 +10,14 @@ def find_missing_letter(range)
 
   comp = alpha.slice(start, stop)
 
-  comp.split(//) - range.split(//)
+  array = comp.split(//) - range.split(//)
 
+  if array.join == ""
+    nil
+  else
+    array.join
+  end
+  
 end
 
 # Driver code - don't touch anything below this line.
